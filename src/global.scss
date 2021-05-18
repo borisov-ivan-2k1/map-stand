@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin:0; 
+  padding:0; 
+  // background: #ffffff; 
+  box-sizing: border-box;
+  color: #3d3d3d;
+  overflow-x: hidden;
+  background: #f6efe4;
+}
+
+html {
+  -webkit-overflow-scrolling: touch;
+  -moz-overflow-scrolling: touch;
+  -ms-overflow-scrolling: touch;
+  -o-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
+html::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.5);
+  -webkit-box-shadow: rgba(0,0,0,1);
+}
+
+.leaflet-top.leaflet-left {
+  top: unset;
+  bottom: 20px;
+}
+
+// custom material
+.MuiCheckbox-root {
+  padding: 0 !important;
+}
+.MuiCheckbox-colorSecondary.Mui-checked {
+  color: #3d3d3d !important;
+}

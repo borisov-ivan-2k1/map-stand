@@ -1,0 +1,44 @@
+.ImageSelector {
+  position: relative;
+  &-Input {
+    width: 100%;
+  }
+  &-InputClose {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+  }
+  &-InputClear {
+    position: absolute;
+    top: 2px;
+    right: 25px;
+  }
+  &-Items {
+    z-index: 99;
+    width: 100%;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #000;
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4px 12px;
+      border-bottom: 1px solid #000;
+      &:hover {
+        background: #f6eff4;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    &-Img {
+      background-color: #fff;
+      max-width: 400px;
+      height: 60px;
+    }
+  }
+}

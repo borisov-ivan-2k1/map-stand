@@ -1,0 +1,80 @@
+.YearsNavigation {
+  height: 70px;
+  width: 100%;
+  background: #E8DFC2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &-Wrapper { 
+    width: 80%;
+    display: flex;
+    overflow-x: overlay;
+    scroll-behavior: smooth;
+    height: 100%; 
+    position: relative;
+
+    &::-webkit-scrollbar {
+      visibility: hidden;
+    }
+   
+  }
+
+  &-Line {
+    height: 4px;
+    background: #8B9AB5;
+    position: absolute;
+    top: calc(50% + 10px);
+  }
+
+  &-Left {
+    position: absolute;
+    position: absolute;
+    left: calc(10% - 14px);
+    top: calc(50% + 2px);
+    cursor: pointer;
+  }
+
+  &-Right {
+    position: absolute;
+    position: absolute;
+    right: calc(10% - 14px);
+    top: calc(50% + 2px);
+    cursor: pointer;
+  }
+ 
+  &-Item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-Circle {
+      background: #8B9AB5;
+      border: 2px solid #334D6E;
+      width: 16px;
+      height: 16px;
+      border-radius: 25px;
+      z-index: 1;
+      cursor: pointer;
+      position: relative;
+      top: 11px;
+      &.active {
+        width: 23px;
+        height: 23px;
+        .YearsNavigation-Item-Year {
+          font-weight: bold;
+          left: -9px;
+        }
+      }
+    }
+    &-Year {
+      position: absolute;
+      top: -29px;
+      left: -12px;
+      user-select: none;
+    }
+  }
+}
+
+

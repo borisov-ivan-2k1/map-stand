@@ -1,0 +1,128 @@
+ .Search {
+    position: relative;
+    top: 36px;
+    left: 50%;
+    transform: translateY(-50%);
+    max-width: 420px;
+    min-width: 260px;
+    transform: translate(-50%, -50%);
+    background: #e5e5d0;
+    height: 40px;
+    border-radius: 25px;
+    padding: 10px 36px;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    border: 1px solid #3d3d3d;
+    &.active {
+      border-bottom: none;
+      border-bottom-left-radius: unset;
+      border-bottom-right-radius: unset;
+    }
+
+  &-Btn {
+    background: #e5e5d0;
+    cursor: pointer;
+    margin-right: 12px;
+  }
+
+  & input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    width: 100%;
+    color: #3d3d3d;
+    font-size: 20px;
+  }
+  
+  &-Results {
+    position: absolute;
+    top: 39px;
+    left: 0;
+    background: #e5e5d0;
+    max-width: 422px;
+    min-width: 260px;
+    width: 100%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1px solid #3d3d3d;
+    &-Item {
+      padding: 10px;
+      border-bottom: 1px solid #3d3d3d;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      &:hover {
+        background-color: #E8DFC2;
+        &:last-child {
+          border-bottom-left-radius: 25px;
+          border-bottom-right-radius: 25px;
+        }
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Search {
+    max-width: 380px;
+    min-width: 200px;
+    height: 39px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    top: 30px;
+    &-Btn {
+      width: 15px;
+      height: 15px;
+    }
+
+    & input {
+      font-size: 14px;
+    }
+
+    &-Results {
+      top: 34px;
+      min-width: 380px;
+      min-width: 200px;
+      &-Item {
+        padding: 8px 18px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Search {
+    max-width: 300px;
+
+    &-Btn {
+      width: 13px;
+      height: 13px;
+    }
+
+    & input {
+      font-size: 14px;
+    }
+
+    &-Results {
+      min-width: 300px;
+    }
+    &-Item {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Search {
+    max-width: 250px;
+    &-Results {
+      min-width: 200px;
+    }
+  }
+}

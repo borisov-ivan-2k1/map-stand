@@ -1,0 +1,12 @@
+.MapPage {
+  background: #f6efe4;
+  &-Map {
+    position: relative;
+    height: calc(100vh - 70px);
+    height: calc(var(--vh, 1vh) * 100 - 70px);
+  }
+
+  &-Infoblock {
+    // margin-bottom: 24px;
+  }
+}
