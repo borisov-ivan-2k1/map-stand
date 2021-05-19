@@ -11,12 +11,13 @@ export class LeafletThickArrowsDraw {
             arrow: {},
             head: {
                 yawn: 60,
-                size: 20
+                size: 10
             },
-            tailWidth: 10000,
-            headWidth: 4000,
+            weight: 1,
+            tailWidth: 400,
+            headWidth: 160,
         };
-        this.precision = 16;
+        this.precision = 10;
         this.options = Object.assign({}, defaults, options);
     }
 
@@ -25,8 +26,8 @@ export class LeafletThickArrowsDraw {
         let layers = [];
 
         let kilometersPerPixel = this.getKilometersPerPixel(map);
-        const tailWidth = options.tailWidth * kilometersPerPixel;
-        const headWidth = options.headWidth * kilometersPerPixel;
+        const tailWidth = options.tailWidth * kilometersPerPixel * options.weight;
+        const headWidth = options.headWidth * kilometersPerPixel * options.weight;
         parts.forEach((path, index) => {
             if(path.length > 1) {
                 let latLngPath = [];

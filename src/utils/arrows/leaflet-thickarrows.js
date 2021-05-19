@@ -86,7 +86,7 @@ L.LayerGroup.include({
     },
 
     onRemove: function (map, layer) {
-        for (var layer in this._layers) {
+        if (layer in this._layers) {
             if (this._layers[layer]) {
                 this._layers[layer].remove();
             }
@@ -109,7 +109,6 @@ L.Map.include({
 });
 
 let saved_GeoJSON_geometryToLayer = L.GeoJSON.geometryToLayer;
-let saved_GeoJSON_addData = L.GeoJSON.prototype.addData;
 
 L.GeoJSON.include({
     geometryToLayer: function (geojson, options) {
@@ -128,7 +127,6 @@ L.GeoJSON.include({
         return figure;
     },
     addData: function (geojson) {
-        saved_GeoJSON_addData.apply(this, arguments);
         var features = L.Util.isArray(geojson) ? geojson : geojson.features,
             i,
             len,

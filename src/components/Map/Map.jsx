@@ -158,8 +158,9 @@ const MapPresenter = ({
           key={el._id} data={el.data.data} 
           weight={-1 + zoom} 
           color={el.data.color} 
-          style={{opacity: 0.0}}
-          thickArrows={{arrow: {color: el.data.color, fillColor: el.data.color, fillOpacity: 1}}}
+          style={{opacity: 0, zIndex: 9999}}
+          thickArrows={{arrow: {color: el.data.color, opacity: 0.3, fillColor: el.data.color, fillOpacity: isCurrentEvent ? 1 : 0.3, pane: 'markerPane' }, head: {size: 5 +(Math.pow(zoom - 3, 2)), yawn: 60}, weight: 5 +(Math.pow(zoom - 3, 2))}}
+          // thickArrows={{arrow: {color: el.data.color, fillColor: el.data.color, fillOpacity: 1}}}
           >
             <Tooltip direction='top' >
               <div>{el.title}</div>

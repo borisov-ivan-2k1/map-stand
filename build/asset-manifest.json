@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.04430410.chunk.css",
+    "main.js": "/static/js/main.522a34e9.chunk.js",
+    "main.js.map": "/static/js/main.522a34e9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.09b85ec0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.09b85ec0.js.map",
+    "static/css/2.94cc0030.chunk.css": "/static/css/2.94cc0030.chunk.css",
+    "static/js/2.9d8225ae.chunk.js": "/static/js/2.9d8225ae.chunk.js",
+    "static/js/2.9d8225ae.chunk.js.map": "/static/js/2.9d8225ae.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d826f475054a8646ed95407bbe99f645.js": "/precache-manifest.d826f475054a8646ed95407bbe99f645.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.94cc0030.chunk.css.map": "/static/css/2.94cc0030.chunk.css.map",
+    "static/css/main.04430410.chunk.css.map": "/static/css/main.04430410.chunk.css.map",
+    "static/js/2.9d8225ae.chunk.js.LICENSE.txt": "/static/js/2.9d8225ae.chunk.js.LICENSE.txt",
+    "static/media/battle.svg": "/static/media/battle.a3fda52f.svg",
+    "static/media/city.svg": "/static/media/city.d89c57c7.svg",
+    "static/media/dogovor.svg": "/static/media/dogovor.bbf1c3a4.svg",
+    "static/media/dote.svg": "/static/media/dote.9781b350.svg",
+    "static/media/osada.svg": "/static/media/osada.52c7ca34.svg",
+    "static/media/search.svg": "/static/media/search.aa9ec654.svg",
+    "static/media/troopMovement.svg": "/static/media/troopMovement.d648020d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09b85ec0.js",
+    "static/css/2.94cc0030.chunk.css",
+    "static/js/2.9d8225ae.chunk.js",
+    "static/css/main.04430410.chunk.css",
+    "static/js/main.522a34e9.chunk.js"
+  ]
+}
